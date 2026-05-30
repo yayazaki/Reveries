@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We Used to Eat Bugs For This — Biig Yaya</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Biig Yaya</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>We Used to Eat Bugs For This</h1>
+      <div class="meta">May 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>There was a time when reality television had standards.</p>
+
+      <p>Low ones, sure. But standards.</p>
+
+      <p>I'm talking about the era when a man would willingly submerge himself in a tank of cockroaches for twenty seconds of airtime and a cash prize that, after taxes, barely covered rent. When people ate sheep eyeballs on national television and we watched with our hands over our mouths, genuinely unsure whether to laugh or call someone. When the whole point was to humiliate yourself in a creative way: an obstacle course, a wilderness survival challenge, a room full of strangers voting you off an island because you were bad at making fire.</p>
+
+      <p>That was reality TV. Stupid, chaotic, occasionally cruel, but honest about what it was. A circus. And we were there for the circus.</p>
+
+      <p>Now? Now we're watching people fall in love in a villa in Bali and immediately cheat on each other with someone who just walked in wearing a bikini. We're watching housewives from various American zip codes throw wine glasses at each other over a dinner table that cost more than my first car. We're watching grown adults cry in confessional booths about whether someone is "here for the right reasons," a phrase that has somehow survived fifteen seasons of a show built entirely on the wrong reasons.</p>
+
+      <p>And we cannot. Stop. Watching.</p>
+
+      <p>I want to be clear: I am not above this. I have sat on a couch, fully conscious, a functional adult with opinions about literature and a working understanding of Camus, and watched forty-five minutes of people arguing about who said what to whom in a hot tub. I have done this voluntarily. I have, on occasion, watched the next episode immediately after.</p>
+
+      <p>So this is not a takedown from someone standing outside the building. I am in the building. I am in the building eating snacks.</p>
+
+      <p>But I do think we should talk about what happened.</p>
+
+      <p>Because there was a genuine shift somewhere. Reality television used to be about doing things: surviving, competing, performing, eating the sheep eyeball. The drama was a side effect. Now the drama is the product. Nobody's surviving anything. Nobody's learning a skill or racing around the world or being dropped in a forest with nothing but a knife and hubris. They're just existing near each other. And apparently that's enough.</p>
+
+      <p>Twelve people. A villa. Some sun beds. Unlimited drama. No exit.</p>
+
+      <p>The argument could be made, and people make it, that this is what audiences wanted all along. That the obstacle courses were just packaging, and the real draw was always the human mess underneath. The alliances. The betrayals. The person who seemed normal in episode one and revealed themselves to be an absolute menace by episode four.</p>
+
+      <p>Maybe that's true. Maybe we always wanted the mess and the producers finally just gave up pretending otherwise.</p>
+
+      <p>But I think something else happened too.</p>
+
+      <p>Somewhere along the way, the shows stopped being about watching other people be messy and started being about us feeling something, anything, in a world that increasingly asks us to be numb. The outrage at the cheating. The secondhand embarrassment of the cringe confession. The genuine emotional investment in whether two people who met eleven days ago and have the combined emotional intelligence of a parking ticket end up together.</p>
+
+      <p>It's feeling by proxy. And we're addicted to it.</p>
+
+      <p>The more flatlined our actual lives feel, the commute, the inbox, the group chat that's been on mute for six months, the more we need someone, somewhere, to be throwing a wine glass. Not at us. Just near us. Just so we remember what temperature feels like.</p>
+
+      <p>Here's what really gets me though.</p>
+
+      <p>We've watched enough of these shows to know exactly how they work. We know the villain is cast intentionally. We know the "unexpected twist" was in the contract. We know the producers are off-camera asking leading questions designed to manufacture conflict between two people who were perfectly fine twenty minutes ago. We know all of this.</p>
+
+      <p>And we watch anyway.</p>
+
+      <p>Which means we're not being fooled. We're choosing this. Consciously, repeatedly, with full information.</p>
+
+      <p>That used to bother me. Now I think it's just honest. At least reality TV doesn't pretend to be good for you. It's junk food that knows it's junk food. There's something almost refreshing about that, in a world full of content that wants you to feel enriched while it quietly takes everything.</p>
+
+      <p>The real question isn't why we watch Love Island.</p>
+
+      <p>The real question is why we watch Love Island instead of calling the person we've been meaning to call for three months, having the conversation we've been avoiding, or sitting alone with our thoughts for twenty minutes without immediately reaching for a screen.</p>
+
+      <p>But that's a harder show to pitch.</p>
+
+      <p>No villa. No bikinis. No dramatic music sting when someone walks in from the other side of the room.</p>
+
+      <p>Just you, a quiet room, and the mild horror of your own interiority.</p>
+
+      <p>Zero viewers. Cancelled after one episode.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Biig Yaya. All rights reserved.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>

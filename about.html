@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Biig Yaya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Biig Yaya</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="index.html">Writing</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="index.html" class="back-link">← Back</a>
+
+    <div class="about-header">
+      <h1>About</h1>
+      <p class="subtitle">Who's behind the writing</p>
+    </div>
+
+    <div class="about-body">
+      <p>My name is Yaya. I'm Afghan, I grew up between languages and cultures, and I've been an old soul for as long as I can remember. The kind of kid who would rather stay in and read Dostoevsky than do whatever everyone else was doing. Not much has changed.</p>
+
+      <p>By day I work as a Home Entertainment and Automation Technician. I spend my time around the finest audio and video equipment in the world, inside the homes of people who have spent lifetimes accumulating extraordinary things. It gives you a perspective on what wealth actually buys. I write about that sometimes.</p>
+
+      <p>The rest of the time I read. Russian literature, classic American fiction, philosophy. Hemingway, Steinbeck, Camus, Dostoevsky. I'm drawn to books that have weight to them. The kind that ask hard questions and don't pretend to have easy answers.</p>
+
+      <p>This site is where I write. About books, about the strange logistics of being an immigrant in America, about music, about the things I notice in rooms when nobody else is looking at them. No particular agenda. Just writing that feels honest.</p>
+
+      <p>I'm also building a TikTok and Instagram presence if you'd rather follow along there. Same voice, shorter format.</p>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Biig Yaya. All rights reserved.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>

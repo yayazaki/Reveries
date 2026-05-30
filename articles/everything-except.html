@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything Except — Biig Yaya</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Biig Yaya</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>Everything Except</h1>
+      <div class="meta">May 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>There's a speaker in Dr. Glazier's living room that costs more than my car, my rent, and probably three years of my meals combined. It stands there like a piece of sculpture, which it kind of is, and when it plays, you don't hear music so much as you feel accused by it.</p>
+
+      <p>He's in his late nineties. Former movie executive. The house looks like it was designed by someone who was told "money is not a concern" and took that very seriously. Everything in it has a story, a provenance, a reason for existing exactly there and not anywhere else.</p>
+
+      <p>And he can't tie his own shoelaces.</p>
+
+      <p>I don't say that to be cruel. I say it because it's the thing I kept thinking about the whole morning. Here is a man who spent decades at the top of an industry built on illusion and spectacle, who has filled his home with the finest things the world produces, and somewhere between then and now, his hands stopped cooperating. The shoes sit there. Someone else does it.</p>
+
+      <p>I've been going to his house for about three weeks now. Maintenance work, checking the system, making sure the setup still sounds the way it's supposed to. He's a returning client. He likes talking. I like listening. So we've developed a thing.</p>
+
+      <p>He calls me "the little brown boy." Sometimes "the little Middle Eastern boy." I've told him I'm Afghan. I've explained, more than once, that Afghanistan is not in the Middle East. He nods, seems to file it away, and the next time he sees me: "There he is, my little Middle Eastern boy."</p>
+
+      <p>I've decided to let it go. He's ninety-something years old and he connected with my boss because they both lived through an era of American entertainment that doesn't exist anymore. I'm not going to win this argument. The geography of Central Asia is simply not going to land before I finish calibrating his subwoofer.</p>
+
+      <p>What got me, though, what I keep turning over, is the cave room.</p>
+
+      <p>His wife Denise is also in her nineties, also from the industry, and he built her a room. That's the only way I can describe it. A room that is just books. Floor to ceiling, every wall, organized in a way that suggests someone spent real time thinking about it. Warm lighting. A chair positioned like it was placed there by a set designer. The kind of room you build when you love someone and you have the money to make that love structural.</p>
+
+      <p>I was standing in there, just looking at the shelves, and he said: "See anything you like?"</p>
+
+      <p>I told him it was a wonderful collection. That I recognized a lot of my favorites.</p>
+
+      <p>He looked at me differently then. "Really. Most people just look at the speakers."</p>
+
+      <p>I told him the speakers were my job. Books were my passion. He asked me what I read. I mentioned Dostoevsky, Camus, Steinbeck, Hemingway. And something in him shifted. He said I was one of the few people he'd ever met who actually cared about the bookshelf. We started talking, really talking, and it went on longer than either of us planned.</p>
+
+      <p>He said most people he knows read fantasy, genre stuff, things you finish on a plane. I told him I read those too, but Russian and classic literature had always been my favorites. That there's something about the way those books are written, the weight of them, the particular way they sound even in translation, that I'd never found anywhere else. He asked why I thought that was.</p>
+
+      <p>I told him I'd always been an old head. Even as a kid. Something in me just landed there and stayed.</p>
+
+      <p>The old man went quiet for a second.</p>
+
+      <p>"Where did you learn all this?"</p>
+
+      <p>I told him I just read. That I've always read. That when you grow up between languages, books become one of the few places where nobody can tell you you're in the wrong country.</p>
+
+      <p>I didn't say that last part out loud. But I thought it.</p>
+
+      <p>He looked at me the way people sometimes look at you when they've revised something. Not an apology. Just a small, quiet recalibration.</p>
+
+      <p>Here's what I've been sitting with since I left his house: he has everything. Truly. The speakers, the room, the books, the history, the career. And I have a fraction of a fraction of what he has, financially. But I walked into that room and felt it fully. The books. The care that went into choosing them. The Dostoevsky sitting there like it had always been there, because it had.</p>
+
+      <p>I don't think he's read Dostoevsky in years. Maybe decades. The body starts rationing things, apparently.</p>
+
+      <p>And I stood in his wife's reading room (I think she's still alive, actually; nobody mentioned her directly) and I felt what those books were. I don't know if he still can.</p>
+
+      <p>That's not his fault. That's just time doing what time does.</p>
+
+      <p>But it was a strange thing to be the broke immigrant kid in the room and also be the one who got more out of it.</p>
+
+      <p>He still called me the little Middle Eastern boy when I left.</p>
+
+      <p>I said, "Afghanistan. Central Asia."</p>
+
+      <p>He waved his hand like I'd said something charming.</p>
+
+      <p>I drove home thinking about Dostoevsky. About why those books had always felt like home to me. Maybe it's because they were written by people who understood what it meant to carry something heavy and keep moving anyway. Or maybe I just have an old soul and a weird commute.</p>
+
+      <p>Either way. He has the whole shelf. I just have the books in my head.</p>
+
+      <p>For now, that feels like enough.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Biig Yaya. All rights reserved.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>

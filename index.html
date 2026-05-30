@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biig Yaya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Biig Yaya</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="index.html">Writing</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <h1>Essays on books, life,<br>and everything in between.</h1>
+      <p>I'm Yaya. Afghan by origin, American by geography, old soul by nature. I write about the things that stick with me: literature, culture, the strange business of being alive.</p>
+    </section>
+
+    <section class="articles-section">
+      <h2>Recent writing</h2>
+      <ul class="article-list">
+
+        <li>
+          <a href="articles/neither-here-nor-there.html">
+            <div class="article-title">Neither Here Nor There</div>
+            <div class="article-meta">May 2026</div>
+            <div class="article-excerpt">The permanent art of being the wrong kind of person everywhere. On running two operating systems at once, belonging nowhere cleanly, and why that might be the whole point.</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="articles/how-my-mother-ruined-every-restaurant-forever.html">
+            <div class="article-title">How My Mother Ruined Every Restaurant Forever</div>
+            <div class="article-meta">May 2026</div>
+            <div class="article-excerpt">There is one dish that exists only in my mother's kitchen. Not on YouTube. Not in any restaurant. Just that pot that should have been thrown away in 2009. I will spend my life trying to recreate it.</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="articles/the-four-minute-phone-call.html">
+            <div class="article-title">The Four-Minute Phone Call</div>
+            <div class="article-meta">May 2026</div>
+            <div class="article-excerpt">Every immigrant family has one. Four minutes long. Thirty years of weight. Nobody says what they actually mean. Everyone hangs up both loved and mildly irritated.</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="articles/we-used-to-eat-bugs-for-this.html">
+            <div class="article-title">We Used to Eat Bugs For This</div>
+            <div class="article-meta">May 2026</div>
+            <div class="article-excerpt">Reality TV used to be about doing things. Surviving. Competing. Eating the sheep eyeball. The drama was a side effect. Now the drama is the product. And we cannot stop watching.</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="articles/the-girl-on-my-screen.html">
+            <div class="article-title">The Girl on My Screen</div>
+            <div class="article-meta">May 2026</div>
+            <div class="article-excerpt">I didn't mean to find her. That's the thing about doomscrolling — you never do. I recognized the family. I kept thinking about her mother. Then I thought about the algorithm.</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="articles/the-cd-player.html">
+            <div class="article-title">The CD Player</div>
+            <div class="article-meta">May 2026</div>
+            <div class="article-excerpt">I was twelve when I learned that protection is a lie we tell older siblings to make them feel useful. This is about Geeti, Chacho, and the Himesh Reshammiya CD that never left the tray.</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="articles/everything-except.html">
+            <div class="article-title">Everything Except</div>
+            <div class="article-meta">May 2026</div>
+            <div class="article-excerpt">A ninety-something former movie executive has one of the finest audio setups money can buy. He can't tie his own shoelaces. I showed up to check the wiring and we ended up talking about Dostoevsky.</div>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Biig Yaya. All rights reserved.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
