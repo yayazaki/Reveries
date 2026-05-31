@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If it hurts, they mattered — Biig Yaya</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Biig Yaya</a>
+    <div style="display:flex; align-items:center; gap:24px;">
+      <ul class="nav-links">
+        <li><a href="../index.html">Writing</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+        <span class="icon" id="theme-icon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <a href="../index.html" class="back-link">← All writing</a>
+
+    <div class="article-header">
+      <h1>If it hurts, they mattered</h1>
+      <div class="meta">May 2026</div>
+    </div>
+
+    <div class="article-body">
+
+      <p>Nobody gives you a guidebook.</p>
+
+      <p>That is the first thing I want to say. There is no pamphlet, no orientation, no laminated card you get handed the first time someone you love dies. You do not get a syllabus. You do not get a warning. You just get the loss, and then you get the next morning, and somehow you are expected to figure out the rest on your own.</p>
+
+      <p>I have had a lot of practice figuring it out.</p>
+
+      <p>My grandfather went first. Then my sister. Then my best friend and desk mate, six months after my sister, gone in a mine blast. Then my uncle, the only uncle on my dad's side, killed in a suicide attack on his first day at a new job. He was the one who had been helping me carry all of it. The person I was quietly trying to become. And then he was gone too.</p>
+
+      <p>All of this before I was fifteen.</p>
+
+      <p>I want to be clear about something before I go any further. This is not grief Olympics. I am not standing here with a scorecard telling you my losses are bigger than yours or that I have suffered more than you have. I am certain there are people out there who have lost far more than I have, and I am not interested in comparing wounds. What I am saying is that by a certain point, loss stops feeling like an event and starts feeling like a climate. A condition you just live inside.</p>
+
+      <p>And the only way through it is through it.</p>
+
+      <p>That sounds like a bumper sticker. I know. But I have turned it over in my head for years and I cannot find a version that is more honest than that. Grief does not have a shortcut. It does not respond to logic or bargaining or the well-meaning advice of people who want to help and do not know how. You cannot think your way around it. You cannot stay busy enough to outrun it. It just sits there, in the corner of every room you walk into, waiting for you to be still long enough to acknowledge it.</p>
+
+      <p>So you acknowledge it. You feel terrible. And then, eventually, you feel slightly less terrible. And you keep going, not because you are brave, but because staying stopped does not bring anyone back.</p>
+
+      <p>Here is what nobody tells you about losing people this way, this many, this fast. At some point you stop being surprised. And then, after that, something worse happens. You start keeping people at arm's length without meaning to. You do not decide to do it. It just creeps in. You catch yourself not getting too attached. Not letting people get too close. Watching the people you love from a slight distance, just far enough that if the worst happens, you have a head start on surviving it.</p>
+
+      <p>I know how that sounds. I know it is not logical. But grief is not logical, and neither is the armor you build around yourself to survive it.</p>
+
+      <p>There is a version of love I have talked myself into, the kind where you stay back on purpose. Where you watch someone be happy from a distance and you tell yourself that is enough. That the safest thing you can give the people you care about is space, because somehow you have decided that you are the variable. That if you stay far enough away, maybe the pattern breaks. Maybe the people you love get to keep living their lives without whatever follows you around.</p>
+
+      <p>I know. I know.</p>
+
+      <p>The rational part of my brain understands this is not how it works. That I am not a curse. That death is not following me personally. That the losses I have had belong to a specific time and place and set of circumstances that I did not choose.</p>
+
+      <p>But knowing something and feeling something are two different cities, and sometimes you are stuck in one while you can see the other from the window.</p>
+
+      <p>The question people ask me is: how do you deal with it? What is the trick?</p>
+
+      <p>And while we are here, let me tell you what does not help. "I know what you are going through." Nobody wants to hear that. I say this as someone who has been to a few more funerals than a person my age should have attended. You do not know what I am going through. You lost someone in completely different circumstances, in a completely different relationship, at a completely different point in your life. Grief is not a shared language just because we both speak it. Saying "I feel your pain" to someone in the middle of real loss is like handing a drowning person a picture of a life jacket.</p>
+
+      <p>You want to know what actually helps? Honest acknowledgment. Just say: that sucks. Say: man, I am sorry, that is awful. Get creative if you want. "That sucks a giant ballsack" is genuinely more comforting than "I know what you are going through," because at least it is real. At least it is not pretending to understand something it cannot understand. Sometimes the most respectful thing you can do for someone's grief is resist the urge to make it familiar.</p>
+
+      <p>There is no trick. There is only the fact that grief, for all the damage it does, is also a kind of receipt. Proof that something real happened. Proof that someone mattered enough to leave a mark. If you are devastated by losing someone, that means they were real to you. They took up actual space in your life, and now there is a gap where they used to be, and every part of you registers the difference.</p>
+
+      <p>That gap is not a flaw. That gap is the shape of what you had.</p>
+
+      <p>Grief is the price we pay for love unexpressed. All the things you meant to say. All the time you were sure you still had. You pay it whether you are ready or not, and the size of the bill tells you exactly how much it all meant.</p>
+
+      <p>There is no guidebook for that. There is no first-timer's edition.</p>
+
+      <p>You just go through it.</p>
+
+      <p>Because sometimes, that is just it. The only way is through.</p>
+
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Biig Yaya. All rights reserved.
+  </footer>
+
+  <script>
+    const icon = document.getElementById('theme-icon');
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+      icon.textContent = '☀';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+      const dark = document.body.classList.contains('dark');
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+      icon.textContent = dark ? '☀' : '☽';
+    }
+  </script>
+
+</body>
+</html>
